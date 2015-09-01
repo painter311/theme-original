@@ -57,23 +57,18 @@
 
       {{ login_form }}
 
-    {% else %}
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="row">
-            <div class="span10 offset1">
-              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="brand" href="/">{{ site.name }}</a>
-
-              {% if not is_login %}
-              <div class="nav-collapse collapse">
-                <ul class="nav pull-right">
-                   
+    {% else %}  <div class="nw-nav-bar container">
+	<div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="index.html">NAVCO<h6>Navy Office of Community Outreach</h6></a>
+	</div>
+	<div class="navbar-collapse collapse navbar-right">
+	<ul class="nav navbar-nav">
 		  <li><a href="speakers.html">Speakers</a></li>
 			<li><a href="executive-engagements.html">Exec Engagements</a></li>
 
@@ -117,6 +112,27 @@
 
 
 	  <li><a href="contact.html#contact">Contact</a></li>
+	</ul>
+	</div><!--/.nav-collapse -->
+  </div><!--/.container -->
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="row">
+            <div class="span10 offset1">
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="brand" href="/">{{ site.name }}</a>
+
+              {% if not is_login %}
+              <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                   
+		  Hello
 
                   {% if pages %}
                   {% for page in pages %}
