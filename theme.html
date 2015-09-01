@@ -58,38 +58,7 @@
       {{ login_form }}
 
     {% else %}
- <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="row">
-            <div class="span10 offset1">
-              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="brand" href="/">NAVCO</a>
-
-              {% if not is_login %}
-              <div class="nav-collapse collapse">
-                <ul class="nav pull-right">
-                   
-		  Hello
-
-                  {% if pages %}
-                  {% for page in pages %}
-                  <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
-                  {% endfor %}
-                  {% endif %}
-                </ul>
-              </div>
-              {% endif %}
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+ 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
