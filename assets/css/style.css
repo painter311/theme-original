@@ -220,17 +220,22 @@ p {
 a.brand,
 a.brand:link,
 a.brand:visited {
-    font-size: 20px;
+    font-size: 36px;
     color: #ffffff;
     text-shadow: none;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
+    
+}
+.sub-header {
+    font-size:18px;
+}
 }
 a.brand:hover,
 a.brand:link:hover,
 a.brand:visited:hover {
-    color: #333;
+    color: #dfc387;
 }
 .nav li a,
 .nav li a:link,
@@ -249,20 +254,30 @@ a.brand:visited:hover {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    font-size: 12px;
+    font-weight: bold;
+    
 }
 .nav li:hover a,
 .nav li:hover a:link,
 .nav li:hover a:visited,
 .nav li.active a:link {
-    color: #333;
+    color: #dfc387;
 }
 .nav li a {
-    padding-right: 0 !important;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .nav li a:hover,
 .nav li a.active {
     font-weight: bold;
 }
+
+.navbar .nav li.dropdown.open>.dropdown-toggle, .navbar .nav li.dropdown.active>.dropdown-toggle, .navbar .nav li.dropdown.open.active>.dropdown-toggle {
+    background-color: transparent;
+    color: #dfc387;
+}
+
 h1,
 h2,
 h3,
