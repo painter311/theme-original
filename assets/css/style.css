@@ -209,7 +209,7 @@ p {
 .navbar-inner {
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #2eb18d;
+    background-color: #374B65;
     background-image: none;
     background-repeat: no-repeat;
     filter: none;
@@ -217,6 +217,14 @@ p {
     -webkit-box-shadow: none !important;
     border-bottom: 0;
 }
+
+.navbar .nav {
+    
+    float: right;
+    
+}
+
+
 a.brand,
 a.brand:link,
 a.brand:visited {
